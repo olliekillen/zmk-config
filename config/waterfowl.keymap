@@ -32,7 +32,7 @@
     &kp A          &kp S       &kp D       &kp F       &kp G           &kp H      &kp J       &kp K       &kp L       &kp APOS
     &kp Z          &kp X       &kp C       &kp V       &kp B           &kp N      &kp M       &kp COMMA   &kp DOT     &kp FSLH
     &kp LG(LS(Q))  &lt 2 ESC   &kp SPACE   &lt 1 TAB   &kp LG(B)       &kp LG(V)  &lt 4 ENTER &lt 3 BSPC  &lt 5 DEL   &kp LG(D)
-            >;
+            >; 
 
             sensor-bindings = <&inc_dec_kp LG(I) LG(U) &inc_dec_kp LG(L) LG(H) &inc_dec_kp LG(J) LG(K) &inc_dec_kp U LC(R)>;
         };
