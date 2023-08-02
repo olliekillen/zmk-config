@@ -58,7 +58,7 @@ gqt: global-quick-tap {
     &kp LG(LS(Q))  &lt 2 ESC   &kp SPACE    &lt 1 TAB    &kp LG(B)       &kp LG(V)  &lt 4 ENTER	 &lt 3 BSPC       &lt 5 DEL     &kp LG(D)
             >; 
 
-            sensor-bindings = <&inc_dec_kp LG(I) LG(U) &inc_dec_kp LG(L) LG(H) &inc_dec_kp LG(J) LG(K) &inc_dec_kp U LC(R)>;
+            sensor-bindings = <&inc_dec_kp LG(U) LG(I) &inc_dec_kp LG(H) LG(L) &inc_dec_kp LG(K) LG(J) &inc_dec_kp U LC(R)>;
         };
 
         nav_layer {
@@ -82,7 +82,7 @@ gqt: global-quick-tap {
     &kp LG(LS(Q))   &none       &none       &trans      &kp LG(B)               &kp LG(V)   &kp ENTER  &kp BSPC    &kp DEL     &kp LG(D)
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(I) LG(U) &inc_dec_kp LG(L) LG(H) &inc_dec_kp LG(J) LG(K) &inc_dec_kp U LC(R)>;
+            sensor-bindings = <&inc_dec_kp LG(U) LG(I) &inc_dec_kp LG(H) LG(L) &inc_dec_kp LG(K) LG(J) &inc_dec_kp U LC(R)>;
         };
 
         media_layer {
@@ -106,7 +106,7 @@ gqt: global-quick-tap {
     &kp LG(LS(Q))   &trans      &none       &none       &kp LG(B)               &kp LG(V)           &kp C_STOP      &kp C_PP            &kp C_MUTE   &kp LG(D)
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(I) LG(U) &inc_dec_kp LG(L) LG(H) &inc_dec_kp LG(J) LG(K) &inc_dec_kp U LC(R)>;
+            sensor-bindings = <&inc_dec_kp LG(U) LG(I) &inc_dec_kp LG(H) LG(L) &inc_dec_kp LG(K) LG(J) &inc_dec_kp U LC(R)>;
         };
 
         num_layer {
@@ -131,7 +131,7 @@ gqt: global-quick-tap {
     &kp LG(LS(Q))   &kp COMMA       &kp N0          &kp MINUS       &kp LG(B)         	     &kp LG(V)       &none     &trans      &none       &kp LG(D)
             >; 
 
-            sensor-bindings = <&inc_dec_kp LG(I) LG(U) &inc_dec_kp LG(L) LG(H) &inc_dec_kp LG(J) LG(K) &inc_dec_kp U LC(R)>;
+            sensor-bindings = <&inc_dec_kp LG(U) LG(I) &inc_dec_kp LG(H) LG(L) &inc_dec_kp LG(K) LG(J) &inc_dec_kp U LC(R)>;
         };
    
         sym_layer {
@@ -155,7 +155,7 @@ gqt: global-quick-tap {
     &kp LG(LS(Q))   &kp LPAR        &kp RPAR        &kp UNDER       &kp LG(B)                &kp LG(V)   &trans    &none       &none       &kp LG(D)
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(I) LG(U) &inc_dec_kp LG(L) LG(H) &inc_dec_kp LG(J) LG(K) &inc_dec_kp U LC(R)>;
+            sensor-bindings = <&inc_dec_kp LG(U) LG(I) &inc_dec_kp LG(H) LG(L) &inc_dec_kp LG(K) LG(J) &inc_dec_kp U LC(R)>;
         };
 
         fun_layer {
@@ -180,7 +180,7 @@ gqt: global-quick-tap {
     &kp LG(LS(Q))   &kp K_APP       &kp SPACE       &kp TAB         &kp LG(B)         	     &kp LG(V)   &none     &none       &trans      &kp LG(D)
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(I) LG(U) &inc_dec_kp LG(L) LG(H) &inc_dec_kp LG(J) LG(K) &inc_dec_kp U LC(R)>;
+            sensor-bindings = <&inc_dec_kp LG(U) LG(I) &inc_dec_kp LG(H) LG(L) &inc_dec_kp LG(K) LG(J) &inc_dec_kp U LC(R)>;
         }; 
  
     };
