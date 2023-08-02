@@ -7,5 +7,5 @@ manifest:
       remote: zmkfirmware
       revision: stephen/split-encoder
       import: app/west.yml
-  self:   
+  self:  
     path: config
