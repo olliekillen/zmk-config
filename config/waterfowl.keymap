@@ -16,23 +16,14 @@
 
 / {
 	behaviors {
-                lsk: lazy_sticky_key {
+                sm: sticky_mod {
                         compatible = "zmk,behavior-sticky-key";
-                        label = "LAZY_STICKY_KEY";
+                        label = "STICKY_MOD";
                         #binding-cells = <1>;
                         bindings = <&kp>;
-                        release-after-ms = <3000>;
+                        release-after-ms = <1000>;
                         quick-release;
                         ignore-modifiers;
-                        lazy;
-                };
-
-                sm: sticky_mod {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "STICKY_MOD";
-                        #binding-cells = <2>;
-                        bindings = <&kp>, <&lsk>;
-                        flavor = "balanced";
                         hold-while-undecided;
                 };
         };
