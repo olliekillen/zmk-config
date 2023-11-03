@@ -49,11 +49,11 @@
                 /* QWERTY
                 *
                 * ,----------------------------------.                      ,----------------------------------.
-                * |   Q  |   W  |   E  |   R  |   T  |                      |   Y  |   U  |   I  |   O  |   P  |
+                * |   Q  |   W  |   F  |   P  |   B  |                      |   J  |   L  |   U  |   Y  |   '  |
                 * |------+------+------+------+------|                      |------+------+------+------+------|
-                * |   A  |   S  |   D  |   F  |   G  |                      |   H  |   J  |   K  |   L  |   ;  |
+                * |   A  |   R  |   S  |   T  |   G  |                      |   M  |   N  |   E  |   I  |   O  |
                 * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
-                * |   Z  |   X  |   C  |   V  |   B  |  |  2  |    |  3  |  |   N  |   M  |   ,  |   .  |   /  |
+                * |   Z  |   X  |   C  |   D  |   V  |  |  2  |    |  3  |  |   K  |   H  |   ,  |   .  |   /  |
                 * `----------------------------------'  `-----'    `-----'  `----------------------------------'
                 *          ,-----.   ,--------------------.            ,--------------------.   ,-----.
                 *          |  1  |   | ESC | SPACE | TAB  |            |  ENT  | BS |  DEL  |   |  4  |
@@ -61,9 +61,9 @@
                 */
 
                 bindings = <
-                        &kp Q          &kp W       &kp E        &kp R        &kp T           &kp Y      &kp U        &kp I            &kp O         &kp P
-                        &kp A          &kp S       &kp D        &kp F        &kp G           &kp H      &kp J        &kp K            &kp L         &kp APOS
-                        &kp Z          &kp X       &kp C        &kp V        &kp B           &kp N      &kp M        &kp COMMA        &kp DOT       &kp FSLH
+                        &kp Q          &kp W       &kp F        &kp P        &kp B           &kp J      &kp L        &kp U            &kp Y         &kp APOS
+                        &kp A          &kp R       &kp S        &kp T        &kp G           &kp M      &kp N        &kp E            &kp I         &kp O
+                        &kp Z          &kp X       &kp C        &kp D        &kp V           &kp K      &kp H        &kp COMMA        &kp DOT       &kp FSLH
                         &kp LC(C)      &lt 1 ESC   &kp SPACE    &lt 2 TAB    &kp LC(N0)      &kp C_MUTE &lt 3 ENTER  &lt 4 BSPC       &lt 5 DEL     &kp LC(V)
                 >; 
 
@@ -75,9 +75,9 @@
                 /* MEDIA
                 *
                 * ,----------------------------------.                      ,----------------------------------.
-                * |      |      |      |      |      |                      | TOG  | VAL  | VOLUP|  SAT |  HUE |
+                * |      |      |      |      |      |                      | TOG  | MOD  | HUE  |  SAT |  VAL |
                 * |------+------+------+------+------|                      |------+------+------+------+------|
-                * | SUPR | ALT  |CTRL  | SHFT |      |                      |  EP  | PREV | VOLDN| NEXT | MODE |
+                * | SUPR | ALT  |CTRL  | SHFT |      |                      |  EP  | PREV | VOLDN| VOLUP| NEXT |
                 * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
                 * |      |      |      |      |      |  |  2  |    |  3  |  | OUT  | BT 0 | BT 1 | BT 2 | BT 3 |
                 * `----------------------------------'  `-----'    `-----'  `----------------------------------'
@@ -87,8 +87,8 @@
                 */
 
                 bindings = <
-                        &none           &none       &none       &none       &none                   &none           &none           &kp C_VOL_UP        &none        &none
-                        &sm LGUI        &sm LALT    &sm LCTRL   &sm LSHFT   &none                   &none           &kp C_PREV      &kp C_VOL_DN        &kp C_NEXT   &none
+                        &none           &none       &none       &none       &none                   &none           &none           &none               &none        &none
+                        &sm LGUI        &sm LALT    &sm LCTRL   &sm LSHFT   &none                   &none           &kp C_PREV      &kp C_VOL_DN        &kp C_VOL_UP kp C_NEXT
                         &none           &none       &none       &none       &none                   &out OUT_TOG    &bt BT_SEL 0    &bt BT_SEL 1        &bt BT_SEL 2 &bt BT_SEL 3
                         &kp LC(C)       &trans      &none       &none       &kp LC(N0)              &kp C_MUTE      &kp C_STOP      &kp C_PP            &kp C_MUTE   &kp LC(V)
                 >;
@@ -98,24 +98,24 @@
 
         nav_layer {
 
-                /* NAV
+                /* NAV  
                 *   
                 * ,----------------------------------.                      ,----------------------------------.
-                * |      |      |      |      |      |                      | INS  | HOME |  UP  | END  | PGUP |
+                * |      |      |      |      |      |                      | REDO | PASTE| COPY | CUT  | UNDO |
                 * |------+------+------+------+------|                      |------+------+------+------+------|
-                * | SUPR | ALT  | CTRL | SHIFT|      |                      | CAPS | LEFT |  DN  | RIGHT| PGDN |
+                * | SUPR | ALT  | CTRL | SHIFT|      |                      | CAPS | LEFT |  DN  |  UP  | RIGHT|
                 * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
-                * |      |      |      |      |      |  |  2  |    |  3  |  | REDO | PASTE| COPY | CUT  | UNDO |
+                * |      |      |      |      |      |  |  2  |    |  3  |  | INS  | HOME | PGDN | PGUP | END  |
                 * `----------------------------------'  `-----'    `-----'  `----------------------------------'
                 *          ,-----.   ,--------------------.            ,--------------------.   ,-----.
                 *          |  1  |   |      |      |XXXXXX|            | ENTER | BS |  DEL  |   |  4  |
                 *          `-----'   `--------------------'            `--------------------'   `-----'
-                */
+                */ 
 
                 bindings = <
-                        &none           &none       &none       &none       &none                   &kp INS     &kp HOME     &kp UP      &kp END     &kp PG_UP
-                        &sm LGUI        &sm LALT    &sm LCTRL   &sm LSHFT   &none                   &kp CAPS    &kp LEFT     &kp DOWN    &kp RIGHT   &kp PG_DN
                         &none           &none       &none       &none       &none                   &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT   &kp K_UNDO
+                        &sm LGUI        &sm LALT    &sm LCTRL   &sm LSHFT   &none                   &kp CAPS    &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT
+                        &none           &none       &none       &none       &none                   &kp INS     &kp HOME     &kp PG_DN   &kp PG_UP   &kp END
                         &kp LC(C)       &none       &none       &trans      &kp LC(N0)              &kp C_MUTE  &kp ENTER    &kp BSPC    &kp DEL     &kp LC(V)
                 >;
 
