@@ -36,12 +36,6 @@
 			key-positions = <20 29>;
 			bindings = <&caps_word>;
 		};
-
-                combo_game_layer {
-			timeout-ms = <50>;
-			key-positions = <10 19>;
-			bindings = <&tog 1>;
-		};
 	};
 };
 
@@ -119,7 +113,7 @@
                 */
 
                 bindings = <
-                        &none           &none       &none       &none       &none                   &none           &none           &none               &none        &none
+                        &tog 1          &none       &none       &none       &none                   &none           &none           &none               &none        &none
                         &sm LGUI        &sm LALT    &sm LCTRL   &sm LSHFT   &none                   &none           &kp C_PREV      &kp C_VOL_DN        &kp C_VOL_UP &kp C_NEXT
                         &none           &none       &none       &none       &none                   &out OUT_TOG    &bt BT_SEL 0    &bt BT_SEL 1        &bt BT_SEL 2 &bt BT_SEL 3
                         &kp LC(C)       &trans      &none       &none       &kp LC(N0)              &kp C_MUTE      &kp C_STOP      &kp C_PP            &kp C_MUTE   &kp LC(V)
@@ -145,7 +139,7 @@
                 */ 
 
                 bindings = <
-                        &none           &none       &none       &none       &none                   &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT   &kp K_UNDO
+                        &tog 1          &none       &none       &none       &none                   &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT   &kp K_UNDO
                         &sm LGUI        &sm LALT    &sm LCTRL   &sm LSHFT   &none                   &kp CAPS    &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT
                         &none           &none       &none       &none       &none                   &kp INS     &kp HOME     &kp PG_DN   &kp PG_UP   &kp END
                         &kp LC(C)       &none       &none       &trans      &kp LC(N0)              &kp C_MUTE  &kp ENTER    &kp BSPC    &kp DEL     &kp LC(V)
@@ -171,7 +165,7 @@
                 */
 
                 bindings = <
-                        &kp LBRC        &kp AMPS        &kp STAR        &kp LPAR        &kp RBRC     	     &none       &none     &none       &none       &none
+                        &kp LBRC        &kp AMPS        &kp STAR        &kp LPAR        &kp RBRC     	     &none       &none     &none       &none       &tog 1
                         &kp COLON       &kp DLLR        &kp PRCNT       &kp CARET       &kp PLUS       	     &none       &sm RSHFT &sm RCTRL   &sm RALT    &sm RGUI
                         &kp TILDE       &kp EXCL        &kp AT          &kp HASH        &kp PIPE             &none       &none     &none       &none       &none
                         &kp LC(C)       &kp LPAR        &kp RPAR        &kp UNDER       &kp LC(N0)           &kp C_MUTE  &trans    &none       &none       &kp LC(V)
@@ -196,7 +190,7 @@
                 *
                 */
                 bindings = <
-                        &kp LBKT        &kp N7          &kp N8          &kp N9          &kp RBKT     	     &none           &none     &none       &none       &none
+                        &kp LBKT        &kp N7          &kp N8          &kp N9          &kp RBKT     	     &none           &none     &none       &none       &tog 1
                         &kp SEMI        &kp N4          &kp N5          &kp N6          &kp EQUAL            &none           &sm RSHFT &sm RCTRL   &sm RALT    &sm RGUI
                         &kp GRAVE       &kp N1          &kp N2          &kp N3          &kp BSLH             &none           &none     &none       &none       &none
                         &kp LC(C)       &kp DOT         &kp N0          &kp MINUS       &kp LC(N0)     	     &kp C_MUTE      &none     &trans      &none       &kp LC(V)
@@ -222,7 +216,7 @@
                 */
 
                 bindings = <
-                        &kp F12         &kp F7          &kp F8          &kp F9          &kp PSCRN     	     &none       &none     &none       &none       &none
+                        &kp F12         &kp F7          &kp F8          &kp F9          &kp PSCRN     	     &none       &none     &none       &none       &tog 1
                         &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK       	     &none       &sm RSHFT &sm RCTRL   &sm RALT    &sm RGUI
                         &kp F10         &kp F1          &kp F2          &kp F3          &kp PAUSE_BREAK      &none       &none     &none       &none       &none
                         &kp LC(C)       &kp K_APP       &kp SPACE       &kp TAB         &kp LC(N0)           &kp C_MUTE  &none     &none       &trans      &kp LC(V)
