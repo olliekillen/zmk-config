@@ -53,7 +53,7 @@
                 * |------+------+------+------+------|                      |------+------+------+------+------|
                 * |   A  |   R  |   S  |   T  |   G  |                      |   M  |   N  |   E  |   I  |   O  |
                 * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
-                * |   Z  |   X  |   C  |   D  |   V  |  |  2  |    |  3  |  |   K  |   H  |   ,  |   .  |   /  |
+                * |   X  |   C  |   D  |   V  |   Z  |  |  2  |    |  3  |  |   K  |   H  |   ,  |   .  |   /  |
                 * `----------------------------------'  `-----'    `-----'  `----------------------------------'
                 *          ,-----.   ,--------------------.            ,--------------------.   ,-----.
                 *          |  1  |   | ESC | SPACE | TAB  |            |  ENT  | BS |  DEL  |   |  4  |
@@ -63,7 +63,7 @@
                 bindings = <
                         &kp Q          &kp W       &kp F        &kp P        &kp B           &kp J      &kp L        &kp U            &kp Y         &kp APOS
                         &kp A          &kp R       &kp S        &kp T        &kp G           &kp M      &kp N        &kp E            &kp I         &kp O
-                        &kp Z          &kp X       &kp C        &kp D        &kp V           &kp K      &kp H        &kp COMMA        &kp DOT       &kp FSLH
+                        &kp X          &kp C       &kp D        &kp V        &kp Z           &kp K      &kp H        &kp COMMA        &kp DOT       &kp FSLH
                         &kp LC(C)      &lt 2 ESC   &kp SPACE    &lt 3 TAB    &kp LC(N0)      &kp C_MUTE &lt 4 ENTER  &lt 5 BSPC       &lt 6 DEL     &kp LC(V)
                 >; 
 
