@@ -53,7 +53,7 @@
                 * |------+------+------+------+------|                      |------+------+------+------+------|
                 * |   A  |   R  |   S  |   T  |   G  |                      |   M  |   N  |   E  |   I  |   O  |
                 * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
-                * |   X  |   C  |   D  |   V  |   Z  |  |  2  |    |  3  |  |   K  |   H  |   ,  |   .  |   /  |
+                * |   Z  |   X  |   C  |   D  |   V  |  |  2  |    |  3  |  |   K  |   H  |   ,  |   .  |   /  |
                 * `----------------------------------'  `-----'    `-----'  `----------------------------------'
                 *          ,-----.   ,--------------------.            ,--------------------.   ,-----.
                 *          |  1  |   | ESC | SPACE | TAB  |            |  ENT  | BS |  DEL  |   |  4  |
@@ -63,14 +63,14 @@
                 bindings = <
                         &kp Q          &kp W       &kp F        &kp P        &kp B           &kp J      &kp L        &kp U            &kp Y         &kp APOS
                         &kp A          &kp R       &kp S        &kp T        &kp G           &kp M      &kp N        &kp E            &kp I         &kp O
-                        &kp X          &kp C       &kp D        &kp V        &kp Z           &kp K      &kp H        &kp COMMA        &kp DOT       &kp FSLH
-                        &kp LC(C)      &lt 2 ESC   &kp SPACE    &lt 3 TAB    &kp LC(N0)      &kp C_MUTE &lt 4 ENTER  &lt 5 BSPC       &lt 6 DEL     &kp LC(V)
+                        &kp Z          &kp X       &kp C        &kp D        &kp V           &kp K      &kp H        &kp COMMA        &kp DOT       &kp FSLH
+                        &kp LC(C)      &lt 2 ESC   &lt 2 SPACE  &lt 3 TAB    &kp LC(N0)      &kp C_MUTE &lt 4 ENTER  &lt 5 BSPC       &lt 6 DEL     &kp LC(V)
                 >; 
 
                 sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT) &inc_dec_kp LC(MINUS) LC(PLUS) &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(Z) LC(Y)>;
         };
 
-        game_layer {
+        game_layer {                 
 
                 /* QWERTY
                 *
@@ -87,10 +87,10 @@
                 */
 
                 bindings = <
-                        &kp Q          &kp W       &kp E        &kp R        &kp T           &kp Y      &kp U        &kp I            &kp O         &kp P
-                        &kp A          &kp S       &kp D        &kp F        &kp G           &kp H      &kp J        &kp K            &kp L         &kp APOS
-                        &kp Z          &kp X       &kp C        &kp V        &kp B           &kp N      &kp M        &kp COMMA        &kp DOT       &kp FSLH
-                        &kp LC(C)      &lt 2 ESC   &kp SPACE    &lt 3 TAB    &kp LC(N0)      &kp C_MUTE &lt 4 ENTER  &lt 5 BSPC       &lt 6 DEL     &kp LC(V)
+                        &kp TAB        &kp Q       &kp W        &kp E        &kp R           &none      &none        &none            &none         &none
+                        &kp LSHFT      &kp A       &kp S        &kp D        &kp F           &none      &none        &none            &none         &none
+                        &kp LCTRL      &kp Z       &kp X        &kp C        &kp V           &none      &none        &none            &none         &none
+                        &kp LC(C)      &lt 5 ESC   &kp SPACE    &lt 6 TAB    &kp LC(N0)      &kp C_MUTE &lt 4 ENTER  &lt 5 BSPC       &lt 6 DEL     &kp LC(V)
                 >; 
 
                 sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT) &inc_dec_kp LC(MINUS) LC(PLUS) &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(Z) LC(Y)>;
